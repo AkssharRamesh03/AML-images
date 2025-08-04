@@ -57,12 +57,48 @@ Images and annotations are stored locally in the `./hepsi-2` directory after dow
 1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/AML-images.git
-   cd AML-images```
+   cd AML-images
+   ```
 
 2. **Install dependencies**
-```pip install torch torchvision matplotlib pycocotools roboflow```
+```bash
+pip install torch torchvision matplotlib pycocotools roboflow
+```
 
-3. **Run the notebook**
-   ```jupyter notebook fgsm_cav_object_detection.ipynb``
+4. **Run the notebook**
+   ```bash
+   jupyter notebook fgsm_cav_object_detection.ipynb
+   ```
+## FGSM Explained
+The Fast Gradient Sign Method (FGSM) is an efficient way to generate adversarial examples by adding small perturbations to the input image based on the gradient of the model's loss.
+```bash
+adversarial_image = original_image + ε * sign(gradient)
+```
+ε (epsilon) controls the strength of the perturbation.
+gradient is the gradient of the loss with respect to the input image.
+The result is visually similar to the original but can drastically change the model’s prediction.
+
+This project demonstrates how adversarial attacks using FGSM can be used against connected autonomous vehicles.
+
+## Sample Output
+The notebook visualizes:
+1. The original image
+2. The adversarial noise
+3. The adversarial image
+This gives a clear visual sense of how minimal changes can mislead the model.
+
+<img width="939" height="351" alt="image" src="https://github.com/user-attachments/assets/c363a824-67e9-4662-9a47-7b6322119ac5" />
+
+## Key Components
+- **` RoboDataset: Loads COCO-format annotations and images using pycocotools. `**
+
+- **` get_model_instance_segmentation(): Prepares a Faster R-CNN model with a custom classification head. `**
+
+- **` train_model(): Handles training with support for loss logging. `**
+
+- **` fast_gradient_sign_method(): Generates adversarial examples using the FGSM method. `**
+
+- **` data_loader_fn(): Helper function to load a specific index from the dataset. `**
+
 
 
