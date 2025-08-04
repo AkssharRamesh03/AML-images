@@ -56,7 +56,7 @@ Images and annotations are stored locally in the `./hepsi-2` directory after dow
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/AML-images.git
+   https://github.com/AkssharRamesh03/AML-images.git
    cd AML-images
    ```
 
