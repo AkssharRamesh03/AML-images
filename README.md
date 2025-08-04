@@ -51,7 +51,7 @@ Images and annotations are stored locally in the `./hepsi-2` directory after dow
 ├── fgsm_object_detection.ipynb
 ├── README.md
 └── cnn_model.pth  (generated after training)
-
+```
 ## Running the Notebook
 
 1. **Clone the repository**
