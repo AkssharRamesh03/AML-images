@@ -6,7 +6,7 @@ This project explores how adversarial examples can fool object detection models 
 
 ## Overview
 
-Machine learning models—especially deep neural networks—are known to be vulnerable to small, intentional perturbations known as **adversarial attacks**. These changes are often invisible to the human eye but can drastically alter the model's output.
+Machine learning models especially deep neural networks are known to be vulnerable to small, intentional perturbations known as **adversarial attacks**. These changes are often invisible to the human eye but can drastically alter the model's output.
 
 In this notebook:
 - A Faster R-CNN model is trained for object detection on a custom dataset.
@@ -61,9 +61,9 @@ Images and annotations are stored locally in the `./hepsi-2` directory after dow
    ```
 
 2. **Install dependencies**
-```bash
-pip install torch torchvision matplotlib pycocotools roboflow
-```
+   ```bash
+   pip install torch torchvision matplotlib pycocotools roboflow
+   ```
 
 4. **Run the notebook**
    ```bash
