@@ -1,4 +1,4 @@
-# Adversarial Attacks on Object Detection Using FGSM
+# Adversarial Attacks on Connected Autonomous Vehicles road sign detection: Using FGSM
 
 This project explores how adversarial examples can fool object detection models by applying the **Fast Gradient Sign Method (FGSM)** to a trained **Faster R-CNN** detector. The model is trained on a COCO-formatted dataset from Roboflow and tested by generating perturbed images that maintain visual similarity while altering predictions.
 
