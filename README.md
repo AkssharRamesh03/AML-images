@@ -57,11 +57,10 @@ Images and annotations are stored locally in the `./hepsi-2` directory after dow
 1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/fgsm-object-detection.git
-   cd fgsm-object-detection```
+   cd fgsm-object-detection
 
 2. **Install dependencies**
    ```bash
 pip install torch torchvision matplotlib pycocotools roboflow
-```
 
 
